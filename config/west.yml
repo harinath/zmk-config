@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: matthewtodd
-      revision: caps-word-deactivate-by-numeric-with-modifiers
+      revision: matthewtodd
       import: app/west.yml
   self:
     path: config
