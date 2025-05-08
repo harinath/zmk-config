@@ -9,12 +9,13 @@
 // Layer names
 #define COLEMAK 0
 #define QWERTY 1
-#define NAV 2
-#define MOUSE 3
-#define MEDIA 4
-#define NUM 5
-#define SYM 6
-#define FUN 7
+#define FOCAL 2
+#define NAV 3
+#define MOUSE 4
+#define MEDIA 5
+#define NUM 6
+#define SYM 7
+#define FUN 8
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &htl LCTRL k1  &htl LALT k2  &htl LGUI k3  &htl LSHFT k4
@@ -57,13 +58,13 @@
     combos {
         compatible = "zmk,combos";
         thumbs_default_left {
-            layers = <COLEMAK QWERTY>;
+            layers = <COLEMAK QWERTY FOCAL>;
             key-positions = <30 31>;
             bindings = <&lt MEDIA ESC>;
             timeout-ms = <50>;
         };
         thumbs_default_right {
-            layers = <COLEMAK QWERTY>;
+            layers = <COLEMAK QWERTY FOCAL>;
             key-positions = <32 33>;
             bindings = <&lt FUN DEL>;
             timeout-ms = <50>;
@@ -92,11 +93,21 @@
             >;
         };
 
+        focal_layer {
+            bindings = <
+                ALPHAS( \
+                  V, L, H, G, K,   Q, F, O, U, J, \
+                  S, R, N, T, B,   Y, C, A, E, I, \
+                  Z, X, M, D, P,   SQT, W, COMMA, DOT, FSLH \
+                )
+            >;
+        };
+
         nav_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none      &to QWERTY     &none      &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)
+            &none      &none      &none      &to FOCAL  &to QWERTY     &none      &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &to COLEMAK    &caps_word &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
