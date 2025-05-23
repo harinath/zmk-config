@@ -3,13 +3,8 @@ draw_config:
   dark_mode: auto
 
 parse_config:
-  layer_legend_map:
-    nav: "Nav"
-    mouse: "Mouse"
-    media: "Media"
-    number: "Num"
-    symbol: "Sym"
-    function: "Fun"
+  zmk_additional_includes:
+    - "zmk-helpers/include"
 
   raw_binding_map:
     "&caps_word": "Caps"
