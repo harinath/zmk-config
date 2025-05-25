@@ -25,10 +25,10 @@
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
-#define U_WH_U &msc SCRL_UP
-#define U_WH_D &msc SCRL_DOWN
-#define U_WH_L &msc SCRL_LEFT
-#define U_WH_R &msc SCRL_RIGHT
+#define U_WH_U &msc MOVE_UP
+#define U_WH_D &msc MOVE_DOWN
+#define U_WH_L &msc MOVE_LEFT
+#define U_WH_R &msc MOVE_RIGHT
 
 // Home row mods (stolen from urob)
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
@@ -47,6 +47,9 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)
 #define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
+
+// Nav word
+ZMK_AUTO_LAYER(nav_word, continue-list = <LEFT DOWN UP RIGHT>; ignore-modifiers;)
 
 // Combos
 #include "combos.dtsi"
@@ -71,16 +74,16 @@ ZMK_LAYER(Base,
 ZMK_LAYER(Nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //│             │             │             │             │             │   │             │             │             │             │             │
-    &none         &none         &none         &none         &none             &none         &kp LG(V)     &kp LG(C)     &kp LG(X)     &kp LG(Z)
+    &trans        &trans        &trans        &trans        &trans            &trans        &kp LG(V)     &kp LG(C)     &kp LG(X)     &kp LG(Z)
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //│             │             │             │             │             │   │             │             │             │             │             │
-    &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT     &none             &caps_word    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+    &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT     &trans            &caps_word    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //│             │             │             │             │             │   │             │             │             │             │             │
-    &none         &none         &none         &none         &none             &none         &kp HOME      &kp PG_DN     &kp PG_UP     &kp END
+    &trans        &trans        &trans        &trans        &trans            &trans        &kp HOME      &kp PG_DN     &kp PG_UP     &kp END
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                          │             │             │   │             │             │
-                                              &none         &none             &kp ENTER     &kp BSPC
+                                              &trans        &trans            &kp ENTER     &kp BSPC
 //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 

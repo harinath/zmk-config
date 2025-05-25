@@ -4,7 +4,7 @@ draw_config:
 
 parse_config:
   zmk_additional_includes:
-    - "zmk-helpers/include"
+    - "modules/zmk/helpers/include"
 
   raw_binding_map:
     "&caps_word": "Caps"
@@ -22,6 +22,7 @@ parse_config:
     "&msc SCRL_RIGHT": $$mdi:arrow-left-bold-outline$$
     "&mkp LCLK": Left
     "&mkp RCLK": Right
+    "&nav_word NAV": Nav
 
 
   zmk_combos:
