@@ -15,11 +15,18 @@ can tinker a little more freely.
 
 ## Changes from Miryoku
 
-- Removed the [button layer][miryoku-button-layer], since I wasn't really using
-  it.
+- Removed the [button][miryoku-button-layer] and [mouse][miryoku-mouse-layer],
+  layers, since I wasn't really using them.
 - Removed [additional features][miryoku-additional-features] (boot, base, tap,
   extra, opposite, current).
 - Removed keys I didn't use (insert, RGB, power & output toggles, scroll lock).
+- Added lots of combos inspired by [urob's zmk-config][urob-zmk-config]. I was
+  noticing soreness in my left thumb that I think was due to heavy usage with
+  space, nav, and escape all there. I am hoping moving nav and escape will
+  help.
+- While I am here, I'm also experimenting with all his symbol combos. I haven't
+  had soreness in my right thumb, but I do have trouble remembering where all
+  the braces and brackets are in Miryoku, so maybe these combos will help.
 
 ## Things I might try someday
 
@@ -33,6 +40,9 @@ by [Pascal Getreuer's guide][which-alt]. I continue to play with these in the
 background, curious to see if I'll find something I like better enough than
 Colemak-DH to take the muscle memory hit.
 
+- Adding a [Focal][focal] layer. I gave this a quick test in late 2024, then
+  returned in May 2025, almost deciding to make the switch. When I'm ready for
+  the muscle-memory hit, I think this is the one.
 - Adding a [Sturdy][sturdy] layer. I gave this an honest run, using it for work
   for almost a week in January 2025, and while it did feel nice, it wasn't
   enough better than Colemak-DH for me to suffer the muscle memory hit. I was
@@ -40,10 +50,6 @@ Colemak-DH to take the muscle memory hit.
 - Adding a [Canary][canary] layer. I played with it for a little while but 
   decided to concentrate on Sturdy instead. [Vylet][vylet] as a next step did
   look interesting!
-- Adding a [Focal][focal] layer. I may have given up too soon (it has nice
-  looking metrics!), but I had a lot of trouble with P on the inner index
-  column, bottom row. Maybe this teaches me I want to deprioritize the inner
-  index column in favor of heavier ring finger usage?
 - Adding a [Gallium][gallium] layer. I didn't like the pinky to inner index
   lateral stretch for NG much. I've preemptively ruled out [Graphite][graphite]
   for having the same feature. So I think this means I want low LSBs, which is
@@ -66,6 +72,7 @@ Thanks to [caksoylar/keymap-drawer][keymap-drawer].
 [miryoku-mouse-layer]: https://github.com/manna-harbour/miryoku/tree/master/docs/reference#mouse
 [miryoku-button-layer]: https://github.com/manna-harbour/miryoku/tree/master/docs/reference#button
 [miryoku-additional-features]: https://github.com/manna-harbour/miryoku/tree/master/docs/reference#additional-features
+[urob-zmk-config]: https://github.com/urob/zmk-config
 [sturdy]: https://oxey.dev/sturdy
 [canary]: https://github.com/Apsu/Canary
 [gallium]: https://github.com/GalileoBlues/Gallium
