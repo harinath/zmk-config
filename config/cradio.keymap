@@ -36,16 +36,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-// Nav word
-ZMK_AUTO_LAYER(nav_word, continue-list = <LEFT DOWN UP RIGHT>; ignore-modifiers;)
-
 // Combos
 #include "combos.dtsi"
 
 // Morphs
-ZMK_MOD_MORPH(comma_morph, mods = <MOD_LSFT>; bindings = <&kp COMMA>, <&kp SEMICOLON>;)
-ZMK_MOD_MORPH(dot_morph, mods = <MOD_LSFT>; bindings = <&kp DOT>, <&kp COLON>;)
-ZMK_MOD_MORPH(qmark_morph, mods = <MOD_LSFT>; bindings = <&kp QMARK>, <&kp EXCL>;)
 ZMK_MOD_MORPH(lpar_morph, mods = <MOD_LSFT>; bindings = <&kp LPAR>, <&kp LT>;)
 ZMK_MOD_MORPH(rpar_morph, mods = <MOD_LSFT>; bindings = <&kp RPAR>, <&kp GT>;)
 
@@ -59,7 +53,7 @@ ZMK_LAYER(Base,
     &hml LCTRL A  &hml LALT R   &hml LGUI S   &hml LSHFT T  &kp G             &kp M         &hmr RSHFT N  &hmr RGUI E   &hmr RALT I   &hmr RCTRL O
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //│             │             │             │             │             │   │             │             │             │             │             │
-    &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &comma_morph  &dot_morph    &qmark_morph
+    &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                          │             │             │   │             │             │
                                               &lt NAV SPACE &kp TAB           &lt SYM ENTER &lt NUM BSPC
