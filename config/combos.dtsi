@@ -12,7 +12,6 @@ ZMK_COMBO(paste,     &kp LG(V),           LB2 LB1, BASE, COMBO_TERM_FAST, COMBO_
 // Horizontal combos - right hand
 ZMK_COMBO(bspc,      &kp BSPC,            RT1 RT2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(del,       &kp DEL,             RT2 RT3, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(caps,      &caps_word,          RM0 RM1, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(lpar,      &lpar_morph,         RM1 RM2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST, LG(LSHFT), KEYS_L)
 ZMK_COMBO(rpar,      &rpar_morph,         RM2 RM3, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST, LG(LALT), KEYS_L)
 ZMK_COMBO(lbkt,      &kp LBKT,            RB1 RB2, BASE, COMBO_TERM_FAST, COMBO_IDLE_FAST)
