@@ -73,8 +73,8 @@ layers:
   Nav:
   - ''
   - ''
-  - ''
-  - ''
+  - {t: Focal, h: toggle}
+  - {t: Base, h: toggle}
   - ''
   - ''
   - ''
