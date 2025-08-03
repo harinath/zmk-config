@@ -1,6 +1,5 @@
 manifest:
   defaults:
-    remote: urob
     revision: v0.3.0 # Also change .github/workflows/build.yml
 
   remotes:
@@ -14,9 +13,8 @@ manifest:
       remote: zmkfirmware
       import: app/west.yml
 
-    - name: zmk-auto-layer
-      path: modules/zmk/auto-layer
     - name: zmk-helpers
+      remote: urob
       path: modules/zmk/helpers
 
   self:
