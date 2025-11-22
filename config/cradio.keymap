@@ -42,6 +42,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)
 // Combos
 #include "combos.dtsi"
 
+// Morphs
+ZMK_MOD_MORPH(lpar_morph, mods = <MOD_LSFT>; bindings = <&kp LPAR>, <&kp LT>;)
+ZMK_MOD_MORPH(rpar_morph, mods = <MOD_LSFT>; bindings = <&kp RPAR>, <&kp GT>;)
+
 // Define shorter / mnemonic names
 #define U_BRI_DN F14
 #define U_BRI_UP F15
