@@ -1,0 +1,116 @@
+draw_config:
+  append_colon_to_layer_header: false
+  dark_mode: auto
+
+parse_config:
+  zmk_additional_includes:
+    - "modules/zmk/helpers/include"
+
+  raw_binding_map:
+    "&caps_word": "Caps"
+    "&comma_morph": ","
+    "&dot_morph": "."
+    "&lpar_morph": "("
+    "&mmv MOVE_LEFT": $$mdi:arrow-left-thick$$
+    "&mmv MOVE_DOWN": $$mdi:arrow-down-thick$$
+    "&mmv MOVE_UP": $$mdi:arrow-up-thick$$
+    "&mmv MOVE_RIGHT": $$mdi:arrow-right-thick$$
+    "&msc MOVE_LEFT": $$mdi:arrow-right-bold-outline$$
+    "&msc MOVE_DOWN": $$mdi:arrow-up-bold-outline$$
+    "&msc MOVE_UP": $$mdi:arrow-down-bold-outline$$
+    "&msc MOVE_RIGHT": $$mdi:arrow-left-bold-outline$$
+    "&msc SCRL_LEFT": $$mdi:arrow-right-bold-outline$$
+    "&msc SCRL_DOWN": $$mdi:arrow-up-bold-outline$$
+    "&msc SCRL_UP": $$mdi:arrow-down-bold-outline$$
+    "&msc SCRL_RIGHT": $$mdi:arrow-left-bold-outline$$
+    "&mkp LCLK": Left
+    "&mkp RCLK": Right
+    "&nav_word NAV": Nav
+    "&qmark_morph": "?"
+    "&rpar_morph": ")"
+
+  zmk_combos:
+    combo_caps: { key: "Caps" }
+    combo_esc: { key: "$$mdi:keyboard-esc$$" }
+    combo_lpar: { key: "(" }
+    combo_rpar: { key: ")" }
+
+  zmk_keycode_map:
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: "$"
+    PRCNT: "%"
+    CARET: "^"
+    AMPS: "&"
+    ASTRK: "*"
+    LPAR: "("
+    RPAR: ")"
+    EQUAL: "="
+    PLUS: "+"
+    MINUS: "-"
+    UNDER: "_"
+    FSLH: "/"
+    QMARK: "?"
+    BSLH: "\\"
+    PIPE: "|"
+    SEMI: ";"
+    COLON: ":"
+    SQT: "'"
+    DQT: '"'
+    COMMA: ","
+    DOT: "."
+    LBKT: "["
+    LBRC: "{"
+    RBKT: "]"
+    RBRC: "}"
+    GRAVE: "`"
+    TILDE: "~"
+
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+
+    ESC: $$mdi:keyboard-esc$$
+    SPACE: $$mdi:keyboard-space$$
+    TAB: $$mdi:keyboard-tab$$
+    ENTER: $$mdi:keyboard-return$$
+    BSPC: $$mdi:backspace-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    LEFT: "⏴"
+    DOWN: "⏷"
+    UP: "⏶"
+    RIGHT: "⏵"
+
+    HOME: "Home"
+    PG_DN: "Page Down"
+    PG_UP: "Page Up"
+    END: "End"
+
+    "LG(V)": "Paste"
+    "LG(C)": "Copy"
+    "LG(X)": "Cut"
+    "LG(Z)": "Undo"
+
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+
+    F14: $$mdi:lightbulb-outline$$
+    F15: $$mdi:lightbulb-on-outline$$
+
+    C_AC_DESKTOP_SHOW_ALL_APPLICATIONS: $$mdi:view-grid-outline$$
+    C_AC_DESKTOP_SHOW_ALL_WINDOWS: $$mdi:dock-window$$
