@@ -1,12 +1,23 @@
-on: [push, pull_request, workflow_dispatch]
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch:  # can be triggered manually
+  pull_request:       # or in pull-requests
+  push:               # automatically run on changes to following paths
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "docs/keymap_drawer.yaml"
+      # - 'boards/*/*/*.keymap'
 
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
-      contents: write
+      contents: write  # allow workflow to commit to the repo
     with:
-      commit_message: "[draw] ${{ github.event.head_commit.message }}"
-      keymap_patterns: "config/*.keymap"
-      config_path: "docs/config.yml"
-      output_folder: "docs"
+      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      config_path: "docs/keymap_drawer.yaml"  # config file, ignored if not exists
+      output_folder: "docs"            # path to save produced SVG and keymap YAML files
+      parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+
