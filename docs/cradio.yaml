@@ -31,8 +31,8 @@ layers:
   - ','
   - .
   - /
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: Sym}
   - {t: '$$mdi:backspace-outline$$', h: Num}
   Focal:
@@ -66,8 +66,8 @@ layers:
   - ','
   - .
   - /
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: Sym}
   - {t: '$$mdi:backspace-outline$$', h: Num}
   Nav:
@@ -108,7 +108,7 @@ layers:
   Mouse: ['', '', '', '', '', '', '$$mdi:dock-window$$', F11, '$$mdi:view-grid-outline$$', '', '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$',
     '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-shift$$', '', '', '$$mdi:arrow-left-thick$$', '$$mdi:arrow-down-thick$$', '$$mdi:arrow-up-thick$$', '$$mdi:arrow-right-thick$$',
     '', '', '', '', '', '', '$$mdi:arrow-left-bold-outline$$', '$$mdi:arrow-down-bold-outline$$', '$$mdi:arrow-up-bold-outline$$', '$$mdi:arrow-right-bold-outline$$',
-    '', '', Right, Left]
+    '', '', Left, Right]
   Media:
   - ''
   - ''
